@@ -26,8 +26,8 @@ viewbox(
 	"\n\n\n\n\n\n\n\n\n\n"+
 	"<#0000ff>Welcome!</#>\n\n\n\n"+
 	"You are about to flash Marvellous Sense.\n\n"+
-	"<b>Build: v5 -Final</b>\n"+
-	"<b>Datum: 26.05.2013</b>\n\n"+
+	"<b>Build: v6 -Final</b>\n"+
+	"<b>Datum: 15.06.2013</b>\n\n"+
 	"Please click next to go on."+
 	"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
 	"by Kevinjoa, Mazer.one, Disciplexone (cool keyboard themes)",
@@ -133,8 +133,8 @@ selectbox(
   "theme.prop",
   "Stock",                               "Stock Htc Design",                                                             0,
   "Marvellous-Orange",                   "A new special, exclusive theme by Mazer.one",                                  1,
-  "Marvellous-Cysense",                  "A new special exclusive theme by Mazer.one",                                   0,
-  "Cysense",                             "Cysense Design by Mazer.one",                                                  0,
+  "Marvellous-Cyense",                   "A new special exclusive theme by Mazer.one",                                   0,
+  "Csense",                              "Cyense Design by Mazer.one",                                                   0,
   "Pink",                                "A pink  Theme by Mazer.one",                                                   0,
   "Helldroid",                           "A really cool Theme von Prototyp1981 and Mazer.one",                           0,
   "Maz9000",                             "Not much different against the Helldroid",                                     0
@@ -147,7 +147,7 @@ selectbox(
 	"dialer.prop",
 	"Stock",                             "Stock Htc Design",                                                             0,
 	"Marvellous-Orange",                 "A new special, exclusive dialer by mazer.one",                                 1,
-	"Marvellous-Cysense",                "A new special, exclusive dialer by Mazer.one",                                 0,
+	"Marvellous-Cyense",                 "A new special, exclusive dialer by Mazer.one",                                 0,
 	"Nextheme",                          "A black dialer with blue keys",                                                0,
 	"ICS",                               "A dialer in Ics Design",                                                       0,
 	"Maz9000",                           "A grey-red one by Mazer.one",                                                  0
@@ -173,10 +173,10 @@ selectbox(
 	"launchers.prop",
 	"Stock",							"Stock Htc Rosie Launcher",														 0,
     "Marvellous-Orange",                "Modded Stock Launcher for Marvellous-Orange",                                   1,
-    "Marvellous-Cysense",               "Modded Stock Launcher for Marvellous-Cysense",                                  0,	
+    "Marvellous-Cyense",                "Modded Stock Launcher for Marvellous-Cyense",                                   0,	
     "Holo.",                            "Holo look Launcher",                                                            0,
 	"Pink",                             "Modded Stock launcher with pink look ",                                         0,	
-	"Cysense",                          "Modded Stock launcher with Cysense look",                                       0,
+	"Cyense",                           "Modded Stock launcher with Cyense look",                                        0,
 	"Sense4",                           "Modded Launcherpro with Sense 4 Design",                                        0,
 	"Helldroid/Maz9000",                "Modded Stock launcher with Helldroid/Maz9000 Design",                           0
 );
@@ -188,8 +188,8 @@ selectbox(
 	"clock.prop",
 	"Stock",                           "Stock Htc Clock-Widget",                                                         0,
 	"Marvellous-Orange",               "A new special, exclusive Clock-Widget by Mazer.one",                             1,
-	"Marvellous-Cysense",              "A new special, exclusive Clock-Widget by Mazer.one",                             0, 
-	"Cysense",                         "Cysense look Clock-Widget",                                                      0,
+	"Marvellous-Cyense",               "A new special, exclusive Clock-Widget by Mazer.one",                             0, 
+	"Cyense",                          "Cyense look Clock-Widget",                                                      0,
 	"Pink",                            "A Pink Clock-Widget",                                                            0,
 	"Helldroid/Maz9000",               "Helldroid/Maz9000 Clock-Widget",                                                 0,
 	"Green",                           "Green displayed time and Rest in black",                                         0,
@@ -205,8 +205,8 @@ selectbox(
     "lockscreen.prop",
     "Stock",                           "Stock Htc Lockscreeen",                                                          0,
 	"Marvellous-Orange",               "A new special, exclusive Lockscreen by Mazer.one",                               1,
-	"Marvellous-Cysense",              "A new special, exclusive Lockscreen by Mazer.one",                               0,
-    "Cysense",                         "Cysense Lockscreen",                                                             0,
+	"Marvellous-Cyense",               "A new special, exclusive Lockscreen by Mazer.one",                               0,
+    "Cyense",                          "Cyense Lockscreen",                                                              0,
     "Pink",                            "Pink Lockscreen",                                                                0,
 	"Helldroid",                       "Helldroid Lockscreen",                                                           0,
 	"Maz9000",                         "Maz9000 Lockscreen",                                                             0
@@ -219,8 +219,8 @@ selectbox(
    "mms.prop",
    "Stock",                            "Stock Htc look SMS/MMS app",                                                     0,
    "Marvellous-Orange",                "A new special, exclusive SMS/MMS app by Mazer.one",                              1,
-   "Marvellous-Cysense",               "A new special, exclusive SMS/MMS app by Mazer.one",                              0,
-   "Cysense",                          "Cysense look SMS/MMS app",                                                       0,
+   "Marvellous-Cyense",                "A new special, exclusive SMS/MMS app by Mazer.one",                              0,
+   "Cyense",                           "Cyense look SMS/MMS app",                                                       0,
    "Helldroid/Maz9000",                "Helldroid/Maz9000 look SMS/MMS app",                                             0
 );
    

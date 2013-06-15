@@ -347,19 +347,19 @@ if
 if
         file_getprop("/tmp/aroma-data/theme.prop","selected.0") == "3"
 	then
-    ui_print("-Flashing Marvellous-Cysense look...");
-        package_extract_dir("theme/marvellouscysense", "/system/framework");
-		package_extract_dir("theme/marvellouscysenseapp", "/system/app");
-		package_extract_dir("fonts/marvellouscysense", "/system/fonts");
+    ui_print("-Flashing Marvellous-Cyense look...");
+        package_extract_dir("theme/marvellouscyense", "/system/framework");
+		package_extract_dir("theme/marvellouscyenseapp", "/system/app");
+		package_extract_dir("fonts/marvellouscyense", "/system/fonts");
 	endif;
 	
 if
         file_getprop("/tmp/aroma-data/theme.prop","selected.0") == "4"
 	then
-    ui_print("-Flashing Cysense look...");
-        package_extract_dir("theme/cysense", "/system/framework");
-		package_extract_dir("theme/cysenseapp", "/system/app");
-		package_extract_dir("fonts/cysense", "/system/fonts");
+    ui_print("-Flashing Cyense look...");
+        package_extract_dir("theme/cysnse", "/system/framework");
+		package_extract_dir("theme/cyenseapp", "/system/app");
+		package_extract_dir("fonts/cyense", "/system/fonts");
 	endif;
 
 if
@@ -409,8 +409,8 @@ if
 if
         file_getprop("/tmp/aroma-data/dialer.prop","selected.0") == "3"
 	then
-    ui_print("-Flashing Marvellous-Cysense look Dialer...");
-		package_extract_dir("dialer/marvellouscysense", "/system/app");
+    ui_print("-Flashing Marvellous-Cyense look Dialer...");
+		package_extract_dir("dialer/marvellouscyense", "/system/app");
 	endif;
 	
 if
@@ -498,8 +498,8 @@ if
 if
 		file_getprop("/tmp/aroma-data/launchers.prop","selected.0") == "3"
 	then
-	ui_print("- Flashing Stock Marvelous-Cysense Launcher...");
-		package_extract_dir("launchers/marvellouscysense", "/system/app");
+	ui_print("- Flashing Stock Marvelous-Cyense Launcher...");
+		package_extract_dir("launchers/marvellouscyense", "/system/app");
 	endif;
 	
 if
@@ -519,8 +519,8 @@ if
 if
 		file_getprop("/tmp/aroma-data/launchers.prop","selected.0") == "6"
 	then
-	ui_print("- Flashing Cysense Rosie Launcher...");
-		package_extract_dir("launchers/cysenserosie", "/system/app");
+	ui_print("- Flashing Cyense Rosie Launcher...");
+		package_extract_dir("launchers/cyenserosie", "/system/app");
 	endif;	
 
 if
@@ -557,15 +557,15 @@ if
 if
 		file_getprop("/tmp/aroma-data/clock.prop","selected.0") == "3"
 	then
-	ui_print("- Flashing Marvellous-Cysense Clock-Widget...");
-		package_extract_dir("clock/marvellouscysense", "/system/app");
+	ui_print("- Flashing Marvellous-Cyense Clock-Widget...");
+		package_extract_dir("clock/marvellouscyense", "/system/app");
 	endif;
 	
 if
 		file_getprop("/tmp/aroma-data/clock.prop","selected.0") == "4"
 	then
-	ui_print("- Flashing Cysense Clock-Widget...");
-		package_extract_dir("clock/cysense", "/system/app");
+	ui_print("- Flashing Cyense Clock-Widget...");
+		package_extract_dir("clock/cyense", "/system/app");
 	endif;	
 	
 if
@@ -630,15 +630,15 @@ if
 if
 		file_getprop("/tmp/aroma-data/lockscreen.prop","selected.0") == "3"
 	then
-	ui_print("- Flashing Marvellous-Cysense Lockscreen...");
-		package_extract_dir("lockscreen/marvellouscysense", "/system/app");
+	ui_print("- Flashing Marvellous-Cyense Lockscreen...");
+		package_extract_dir("lockscreen/marvellouscyense", "/system/app");
 	endif;
 	
 if
 		file_getprop("/tmp/aroma-data/lockscreen.prop","selected.0") == "4"
 	then
-	ui_print("- Flashing Cysense Lockscreen...");
-		package_extract_dir("lockscreen/cysense", "/system/app");
+	ui_print("- Flashing Cyense Lockscreen...");
+		package_extract_dir("lockscreen/cyense", "/system/app");
 	endif;	
 	
 if
@@ -683,15 +683,15 @@ if
 if
 		file_getprop("/tmp/aroma-data/mms.prop","selected.0") == "2"
 	then
-	ui_print("- Flashing Marvellous-Cysense SMS/MMS app...");
-		package_extract_dir("mms/marvellouscysense", "/system/app");
+	ui_print("- Flashing Marvellous-Cyense SMS/MMS app...");
+		package_extract_dir("mms/marvellouscyense", "/system/app");
 	endif;
 	
 if
 		file_getprop("/tmp/aroma-data/mms.prop","selected.0") == "4"
 	then
-	ui_print("- Flashing Cysense SMS/MMS app...");
-		package_extract_dir("mms/cysense", "/system/app");
+	ui_print("- Flashing Cyense SMS/MMS app...");
+		package_extract_dir("mms/cyense", "/system/app");
 	endif;		
 
 if
