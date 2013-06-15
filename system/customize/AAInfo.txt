@@ -1,0 +1,6 @@
+TaskID : 261695
+Project : Marvel_S
+SKU : HTC Europe[401]
+ROM Ver : 2.26.401.3
+Customization Id : 340053
+RCMS Id : 604
