@@ -1211,7 +1211,7 @@ if
 	
 set_progress(0.65);
 	
-#Tastatur
+#Keyboard
 if
         file_getprop("/tmp/aroma-data/keyboard.prop","selected.0") == "1"
 	then
@@ -1247,12 +1247,6 @@ if
 		package_extract_dir("keyboard/blau", "/system/app");
 	endif;
 	
-if
-        file_getprop("/tmp/aroma-data/keyboard.prop","selected.0") == "6"
-	then
-    ui_print("-Flashing real Gingerbread keyboard...");
-		package_extract_dir("keyboard/gb", "/system/app");
-	endif;
 set_progress(0.7);	
 
 #Launchers

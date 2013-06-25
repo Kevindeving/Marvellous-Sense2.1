@@ -1,10 +1,10 @@
 ﻿# MarvellousSense-The ultimate sense way-Aroma Config by Kevinjoa
 
 ini_set("rom_name",             "Sensian");
-ini_set("rom_version",          "v22 - Test");
+ini_set("rom_version",          "v5 - Final");
 ini_set("rom_author",           "Kevinjoa");
 ini_set("rom_device",           "HTC Wildfire S");
-ini_set("rom_date",             "April ,20te, 2013");
+ini_set("rom_date",             "May ,26th, 2013");
 
 ini_set("text_ok", "OK");
 ini_set("text_next", "Next >");
@@ -26,8 +26,8 @@ viewbox(
 	"\n\n\n\n\n\n\n\n\n\n"+
 	"<#0000ff>Welcome!</#>\n\n\n\n"+
 	"You are about to flash Marvellous Sense.\n\n"+
-	"<b>Build: v2 -Final</b>\n"+
-	"<b>Datum: 03.05.2013</b>\n\n"+
+	"<b>Build: v6 -Final</b>\n"+
+	"<b>Datum: 15.06.2013</b>\n\n"+
 	"Please click next to go on."+
 	"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
 	"by Kevinjoa, Mazer.one, Disciplexone (cool keyboard themes)",
@@ -58,6 +58,122 @@ selectbox(
 ); 
 
 selectbox(
+  "GPS Configuration",
+  "Select your country from the list below",
+  "@customize",
+  "gps.prop",
+
+  "Installs the right gps.conf file for your country to increase gps accuracy & lock-speed\n","",2,#--selected.1
+
+  "Angola","",0,
+  "Argentina","",0,
+  "Australia","",0,
+  "Austria","",0,
+  "Bangladesh","",0,
+  "Belarus","",0,
+  "Belgium","",0,
+  "Bosnia & Herzegovina","",0,
+  "Brazil","",0,
+  "Bulgaria","",0,
+  "Cambodia","",0,
+  "Canada","",0,
+  "Chile","",0,
+  "China","",0,
+  "Costa-Rica","",0,
+  "Croatia","",0,
+  "Czech Republic","",0,
+  "Denmark","",0,
+  "El Salvador","",0,
+  "Estonia","",0,
+  "Finland","",0,
+  "France","",0,
+  "Germany","",0,
+  "Greece","",0,
+  "Guatemala","",0,
+  "Hong-Kong","",0,
+  "Hungary","",0,
+  "India","",0,
+  "Indonesia","",0,
+  "Iran","",0,
+  "Ireland","",0,
+  "Israel","",0,
+  "Italy","",0,
+  "Japan","",0,
+  "Korea","",0,
+  "Kyrgyzstan","",0,
+  "Latvia","",0,
+  "Lithuania","",0,
+  "Luxembourg","",0,
+  "Macedonia","",0,
+  "Madagascar","",0,
+  "Malaysia","",0,
+  "Mexico","",0,
+  "Moldova","",0,
+  "Netherlands","",0,
+  "New Caledonia","",0,
+  "New Zealand","",0,
+  "Norway","",0,
+  "Oman","",0,
+  "Pakistan","",0,
+  "Panama","",0,
+  "Philippines","",0,
+  "Poland","",0,
+  "Portugal","",0,
+  "Qatar","",0,
+  "Republic of Serbia","",0,
+  "Romania","",0,
+  "Russian Federation","",0,
+  "Saudi Arabia","",0,
+  "Singapore","",0,
+  "Slovakia","",0,
+  "Slovenia","",0,
+  "South Africa","",0,
+  "Spain","",0,
+  "Sri Lanka","",0,
+  "Sweden","",0,
+  "Switzerland","",0,
+  "Taiwan","",0,
+  "Tanzania","",0,
+  "Thailand","",0,
+  "Turkey","",0,
+  "Ukraine","",0,
+  "United Arab Emirates","",0,
+  "United Kingdom","",0,
+  "United States of America","",0,
+  "Uzbekistan","",0,
+  "Venezuela","",0,
+  "Vietnam","",0,
+  "Yugoslavia","",0,
+
+"Continents","Use your continent file if your country isn't on the list",2,
+
+  "Africa","",0,
+  "Asia","",0,
+  "Europe","",0,
+  "North America","",0,
+  "Oceania","",0,
+  "South America","",0
+);
+
+checkbox(
+  "BLOAT!",
+  "Some Bloat which would come by Default from Htc.",
+  "icons/customize",
+  "debloat.prop",
+  "Htcfacebook",             "Built in Facebook integration :not Gplaystore app:",             0,
+  "Flash light Plugin",      "Small 17kb flash player",                                        1,
+  "Flashlight",              "Can turn on off the light of Phone's led",                       1,
+  "Flickr",                  "Integrated Flickr functions ",                                   0,
+  "Htc Fmradio",             "Htc's fmradio if you wanna listen Fmradio",                      1,
+  "Twitter",                 "Twitter integration by Htc",                                     0,
+  "Friendstream",            "Fusion of twitter and Facebook :needs fb and twitter thingys",   0,
+  "Google Talk",             "Google Talk app by Google",                                      0,
+  "Htc Recommends",          "Htc Recommends app by Htc",                                      0,
+  "Live wallpapers",         "If you want the live wallpapers, can still use downloaded ones", 0,
+  "Youtube",                 "Youtube app ",                                                   0
+);
+ 
+selectbox(
   "Browser",
   "Which Browser do you want to use?",
   "icons/apps",
@@ -77,13 +193,13 @@ selectbox(
   "Playmusic",                "Googles Music Player",                                                                0
 );  
 
-selectbox(
-  "Bootanimation",
-  "Which Bootanimation do you wanna have ?",
-  "icons/customize",
-  "animi.prop",
-  "Stock Bootanimation",               "Stock Htc quietly brilliant Bootanimation",                                  0,
-  "Marvellous-Bootanimation",          "Marvellous Bootanimation :D",                                                1
+checkbox(
+  "Sound mods",
+  "Select your favourite Sound mods",
+  "icons/apps",
+  "msound.prop",
+  "Beatsaudio",                      "",                                                  0,
+  "Viper Sound Engine",              "",                                                  1
 );  
 
 selectbox(
@@ -115,7 +231,8 @@ selectbox(
   "theme.prop",
   "Stock",                               "Stock Htc Design",                                                             0,
   "Marvellous-Orange",                   "A new special, exclusive theme by Mazer.one",                                  1,
-  "Cysense",                             "Cysense Design by Mazer.one",                                                  0,
+  "Marvellous-Cyense",                   "A new special exclusive theme by Mazer.one",                                   0,
+  "Csense",                              "Cyense Design by Mazer.one",                                                   0,
   "Pink",                                "A pink  Theme by Mazer.one",                                                   0,
   "Helldroid",                           "A really cool Theme von Prototyp1981 and Mazer.one",                           0,
   "Maz9000",                             "Not much different against the Helldroid",                                     0
@@ -128,6 +245,7 @@ selectbox(
 	"dialer.prop",
 	"Stock",                             "Stock Htc Design",                                                             0,
 	"Marvellous-Orange",                 "A new special, exclusive dialer by mazer.one",                                 1,
+	"Marvellous-Cyense",                 "A new special, exclusive dialer by Mazer.one",                                 0,
 	"Nextheme",                          "A black dialer with blue keys",                                                0,
 	"ICS",                               "A dialer in Ics Design",                                                       0,
 	"Maz9000",                           "A grey-red one by Mazer.one",                                                  0
@@ -141,8 +259,8 @@ selectbox(
     "Stock",                             "Stock Htc Design",                                                          1,
     "Nextheme",                          "A black keyboard with blue keys",                                           0,
     "ICS",                               "A keyboard with Ics Design",                                                0,
-	"Schwarz",                           "A dark black keyboard with white keys and without arrows",                  0,
-	"Blau",                              "A dark black keyboard with blue-green keys and without arrows",             0,
+	"Black",                             "A dark black keyboard with white keys and without arrows",                  0,
+	"Blue",                              "A dark black keyboard with blue-green keys and without arrows",             0,
 	"Gingerbread",                       "Stock Gingerbread keyboard",                                                0
 );	
 	
@@ -152,10 +270,11 @@ selectbox(
 	"icons/apps",
 	"launchers.prop",
 	"Stock",							"Stock Htc Rosie Launcher",														 0,
-    "Marvellous-Orange",                "Modded Stock Launcher for Marvellous-Orange",                                   1,	
+    "Marvellous-Orange",                "Modded Stock Launcher for Marvellous-Orange",                                   1,
+    "Marvellous-Cyense",                "Modded Stock Launcher for Marvellous-Cyense",                                   0,	
     "Holo.",                            "Holo look Launcher",                                                            0,
 	"Pink",                             "Modded Stock launcher with pink look ",                                         0,	
-	"Cysense",                          "Modded Stock launcher with Cysense look",                                       0,
+	"Cyense",                           "Modded Stock launcher with Cyense look",                                        0,
 	"Sense4",                           "Modded Launcherpro with Sense 4 Design",                                        0,
 	"Helldroid/Maz9000",                "Modded Stock launcher with Helldroid/Maz9000 Design",                           0
 );
@@ -166,12 +285,14 @@ selectbox(
 	"icons/apps",
 	"clock.prop",
 	"Stock",                           "Stock Htc Clock-Widget",                                                         0,
-	"Marvellous-Orange",               "A new special, exclusive Clock-Widget by mazer.one",                             1,
-	"Cysense",                         "Cysense look Clock-Widget",                                                      0,
+	"Marvellous-Orange",               "A new special, exclusive Clock-Widget by Mazer.one",                             1,
+	"Marvellous-Cyense",               "A new special, exclusive Clock-Widget by Mazer.one",                             0, 
+	"Cyense",                          "Cyense look Clock-Widget",                                                      0,
 	"Pink",                            "A Pink Clock-Widget",                                                            0,
 	"Helldroid/Maz9000",               "Helldroid/Maz9000 Clock-Widget",                                                 0,
 	"Green",                           "Green displayed time and Rest in black",                                         0,
 	"Orange",                          "Orange displayed time and rest in black",                                        0,
+	"Grey",                            "New grey looking Clock-Widget",                                                  0,
 	"purple",                          "Purple displayed time and rest in black",                                        0
 );
 
@@ -181,8 +302,9 @@ selectbox(
     "icons/apps",
     "lockscreen.prop",
     "Stock",                           "Stock Htc Lockscreeen",                                                          0,
-	"Marvellous-Orange",               "A new special, exclusive Lockscreen by mazer.one",                               1,
-    "Cysense",                         "Cysense Lockscreen",                                                             0,
+	"Marvellous-Orange",               "A new special, exclusive Lockscreen by Mazer.one",                               1,
+	"Marvellous-Cyense",               "A new special, exclusive Lockscreen by Mazer.one",                               0,
+    "Cyense",                          "Cyense Lockscreen",                                                              0,
     "Pink",                            "Pink Lockscreen",                                                                0,
 	"Helldroid",                       "Helldroid Lockscreen",                                                           0,
 	"Maz9000",                         "Maz9000 Lockscreen",                                                             0
@@ -194,8 +316,9 @@ selectbox(
    "icons/apps",
    "mms.prop",
    "Stock",                            "Stock Htc look SMS/MMS app",                                                     0,
-   "Marvellous-Orange",                "A new special, exclusive SMS/MMS app by mazer.one",                              1,
-   "Cysense",                          "Cysense look SMS/MMS app",                                                       0,
+   "Marvellous-Orange",                "A new special, exclusive SMS/MMS app by Mazer.one",                              1,
+   "Marvellous-Cyense",                "A new special, exclusive SMS/MMS app by Mazer.one",                              0,
+   "Cyense",                           "Cyense look SMS/MMS app",                                                       0,
    "Helldroid/Maz9000",                "Helldroid/Maz9000 look SMS/MMS app",                                             0
 );
    
@@ -204,8 +327,9 @@ selectbox(
    "Which tweak do you want to use ?",
    "icons/apps",
    "memory.prop",
-   "Link2sd.",                      "Link2sd: Must be activated in system to work",                                    1,
-   "Int2ext+",                      "A background Script like Data2sd :stable:",                                       0
+   "Link2sd.",                      "Link2sd: Must be activated in system to work",                                    0,
+   "Int2ext+",                      "A background Script like Data2sd, fast but needs some space ",                    0,
+   "Int2ext",                       "Just like Data2sd",                                                               1
 );   
    
    
@@ -219,7 +343,7 @@ viewbox(
 	"To quit, please press Search-Key\n"+
 	"and choose quit installation.\n\n"+
 	"If you want to check your settings please press\n"+
-	"bitte auf Überprüfen.",
+	"please check.",
 	"icons/alert"
 );
 
@@ -232,8 +356,8 @@ install(
 	"icons/install"
 );
 
-ini_set("text_next", "Beenden!");
-ini_set("text_back", "< Zurück");
+ini_set("text_next", "Quit!");
+ini_set("text_back", "< Back");
 
 viewbox(
 	"It's DONE !!",

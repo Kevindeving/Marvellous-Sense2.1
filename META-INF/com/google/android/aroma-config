@@ -260,8 +260,7 @@ selectbox(
     "Nextheme",                          "A black keyboard with blue keys",                                           0,
     "ICS",                               "A keyboard with Ics Design",                                                0,
 	"Black",                             "A dark black keyboard with white keys and without arrows",                  0,
-	"Blue",                              "A dark black keyboard with blue-green keys and without arrows",             0,
-	"Gingerbread",                       "Stock Gingerbread keyboard",                                                0
+	"Blue",                              "A dark black keyboard with blue-green keys and without arrows",             0
 );	
 	
 selectbox(
