@@ -27,7 +27,7 @@ viewbox(
 	"<#0000ff>Welcome!</#>\n\n\n\n"+
 	"You are about to flash Marvellous Sense.\n\n"+
 	"<b>Build: v6 -Final</b>\n"+
-	"<b>Datum: 15.06.2013</b>\n\n"+
+	"<b>Datum: 28.06.2013</b>\n\n"+
 	"Please click next to go on."+
 	"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+
 	"by Kevinjoa, Mazer.one, Disciplexone (cool keyboard themes)",
@@ -54,7 +54,8 @@ selectbox(
   "Stable",			          "Stock non-oc kernel only supports ext2 and3",	                1,
   "Dust 9.0",                 "Performance Kernel which is overclocked to 787mhz at boot",      0,
   "Stock moddified",          "A moddified stock kernel by Crossfire 77 with ext4 support",     0,
-  "Disciplexone1.2",          "Performance kernel by disciplexone- Overclockable up to 825mhz", 0
+  "Disciplexone1.2",          "Performance kernel by disciplexone- Overclockable up to 825mhz", 0,
+  "Stock moddified+",         "Like stock moddified but overclockable upto 806mhz",             0
 ); 
 
 selectbox(
