@@ -55,7 +55,7 @@ selectbox(
   "Dust 9.0",                 "Performance Kernel which is overclocked to 787mhz at boot",      0,
   "Stock moddified",          "A moddified stock kernel by Crossfire 77 with ext4 support",     0,
   "Disciplexone1.2",          "Performance kernel by disciplexone- Overclockable up to 825mhz", 0,
-  "Stock moddified+",         "Like stock moddified but overclockable upto 806mhz",             0
+  "Dustv9 600mhz",            "Dust v9 kernel with 600mhz at boot",                             0
 ); 
 
 selectbox(
@@ -233,7 +233,7 @@ selectbox(
   "Stock",                               "Stock Htc Design",                                                             0,
   "Marvellous-Orange",                   "A new special, exclusive theme by Mazer.one",                                  1,
   "Marvellous-Cyense",                   "A new special exclusive theme by Mazer.one",                                   0,
-  "Csense",                              "Cyense Design by Mazer.one",                                                   0,
+  "Cyense",                              "Cyense Design by Mazer.one",                                                   0,
   "Pink",                                "A pink  Theme by Mazer.one",                                                   0,
   "Helldroid",                           "A really cool Theme von Prototyp1981 and Mazer.one",                           0,
   "Maz9000",                             "Not much different against the Helldroid",                                     0

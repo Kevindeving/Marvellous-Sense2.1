@@ -70,18 +70,19 @@ endif;
 if
     file_getprop("/tmp/aroma/mods.prop","selected.1") == "6"
 then
-  ui_print("Installing Stock+ ocable kernel Kernel");
-      package_extract_dir("devicesupport/marvel/stock3/kernel", "/tmp");
+  ui_print("Installing Dust v9 600mhz at boot");
+      package_extract_dir("devicesupport/marvel/dustv9_600mhz/kernel", "/tmp");
   write_raw_image("/tmp/boot.img", "boot");
   delete("/tmp/boot.img");
-      package_extract_dir("devicesupport/marvel/stock3/system", "/system");
+      package_extract_dir("devicesupport/marvel/dustv9_600mhz/system", "/system");
+	  set_perm(0, 0, 0777, "/system/etc/init.d/88performance");
 endif;
 
 set_progress(0.45);
 
 #-- Okay thats done... now lets link up stuff with the toolbox.
 ui_print("@Toolbox");
-ui_print("Linken wir die Toolbox...");
+ui_print("Let us link toolbox stuff...");
 symlink("toolbox", "/system/bin/cat");
 symlink("toolbox", "/system/bin/chmod");
 symlink("toolbox", "/system/bin/chown");
@@ -1012,7 +1013,7 @@ if
 		package_extract_dir("browser/boat", "/system/app");
 	endif;		
 
-#Musik Player
+#Music Player
 if
 		file_getprop("/tmp/aroma-data/musik.prop","selected.0") == "1"
 	then
