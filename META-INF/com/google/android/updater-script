@@ -1461,7 +1461,7 @@ if
 	endif;
 
 if
-		file_getprop("/tmp/aroma-data/mms.prop","selected.0") == "2"
+		file_getprop("/tmp/aroma-data/mms.prop","selected.0") == "3"
 	then
 	ui_print("- Flashing Marvellous-Cyense SMS/MMS app...");
 		package_extract_dir("mms/marvellouscyense", "/system/app");

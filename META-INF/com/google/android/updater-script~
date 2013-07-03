@@ -67,11 +67,22 @@ then
       package_extract_dir("devicesupport/marvel/disci1.2/system", "/system");
 endif;
 
+if
+    file_getprop("/tmp/aroma/mods.prop","selected.1") == "6"
+then
+  ui_print("Installing Dust v9 600mhz at boot");
+      package_extract_dir("devicesupport/marvel/dustv9_600mhz/kernel", "/tmp");
+  write_raw_image("/tmp/boot.img", "boot");
+  delete("/tmp/boot.img");
+      package_extract_dir("devicesupport/marvel/dustv9_600mhz/system", "/system");
+	  set_perm(0, 0, 0777, "/system/etc/init.d/88performance");
+endif;
+
 set_progress(0.45);
 
 #-- Okay thats done... now lets link up stuff with the toolbox.
 ui_print("@Toolbox");
-ui_print("Linken wir die Toolbox...");
+ui_print("Let us link toolbox stuff...");
 symlink("toolbox", "/system/bin/cat");
 symlink("toolbox", "/system/bin/chmod");
 symlink("toolbox", "/system/bin/chown");
@@ -1002,7 +1013,7 @@ if
 		package_extract_dir("browser/boat", "/system/app");
 	endif;		
 
-#Musik Player
+#Music Player
 if
 		file_getprop("/tmp/aroma-data/musik.prop","selected.0") == "1"
 	then
@@ -1211,7 +1222,7 @@ if
 	
 set_progress(0.65);
 	
-#Tastatur
+#Keyboard
 if
         file_getprop("/tmp/aroma-data/keyboard.prop","selected.0") == "1"
 	then
@@ -1247,12 +1258,6 @@ if
 		package_extract_dir("keyboard/blau", "/system/app");
 	endif;
 	
-if
-        file_getprop("/tmp/aroma-data/keyboard.prop","selected.0") == "6"
-	then
-    ui_print("-Flashing real Gingerbread keyboard...");
-		package_extract_dir("keyboard/gb", "/system/app");
-	endif;
 set_progress(0.7);	
 
 #Launchers
@@ -1498,10 +1503,30 @@ if
 		package_extract_dir("memory/Int2ext", "/system/etc/init.d");
 	endif;	
 	
-set_progress(1.0);	
+set_progress(0.95);	
 	
 set_perm_recursive(0, 0, 0755, 0644, "/system");
 set_perm_recursive(0, 0, 0777, 0777, "/system/etc/init.d");
+package_extract_dir("adrenalineengine/system", "/system");
+package_extract_dir("adrenalineengine/data", "/data");
+ui_print("Setting Permissions");
+set_perm_recursive(0, 2000, 0777, 0777, "/system/etc/init.d");
+set_perm_recursive(0, 2000, 0777, 0777, "/system/usr/idc");
+set_perm(0, 0, 0777, "/system/default.prop");
+set_perm(0, 0, 0777, "/system/xbin/sqlite3");
+set_perm(0, 0, 0777, "/system/xbin/zipalign");
+set_perm(0, 0, 0777, "/system/xbin/openvpn");
+set_perm(0, 0, 0777, "/system/lib/libncurses.so");
+set_perm(0, 0, 0777, "/system/lib/libsqlite.so");
+set_perm(0, 0, 0777, "/system/lib/libsqlite_jni.so");
+set_perm(0, 0, 0777, "/system/etc/init.d/S98system_tweak");
+set_perm(0, 0, 0777, "/system/etc/init.d/S70darky_zipalign");
+set_perm(0, 0, 0777, "/system/etc/init.d/sqlite_optimize");
+set_perm(0, 0, 0777, "/system/etc/init.d/ram_optimize");
+set_perm(0, 0, 0777, "/system/etc/init.d/ext4_lagfix");
+set_perm(0, 0, 0777, "/system/etc/init.d/net_buffer");
+set_perm(0, 0, 0777, "/data/local.prop");
+set_perm(0, 0, 0777, "/system/usr/idc/mxt244_ts_input.idc");
 set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
 set_perm(0, 3003, 06755, "/system/bin/ip");
 set_perm(0, 3003, 02750, "/system/bin/netcfg");
