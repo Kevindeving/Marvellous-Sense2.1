@@ -216,7 +216,7 @@ selectbox(
 
 selectbox(
   "Email",
-  "Which Email app do you wnat to use ?",
+  "Which Email app do you want to use ?",
   "icons/apps",
   "zmail.prop",
   "Htc",                      "Stock Htc Sense2.1 mail app ",                                                        1,
@@ -362,7 +362,7 @@ ini_set("text_back", "< Back");
 viewbox(
 	"It's DONE !!",
 	"\n\n\n\n\n\n\n"+
-	"The MarvellousSebse-ROM is sucssesfully flashed.\n\n"+
+	"The MarvellousSense-ROM is sucssesfully flashed.\n\n"+
 	"First boot can take a while ,so please wait.\n\n"+
 	"Enjoy your customized phone!",
 	"icons/install"
